@@ -25,7 +25,7 @@ export default class Game {
         this.menu = new Menu(this);
         new InputHandler(this);
         // Lives for the player. Will be overitten at start.
-        this.lives = 3;
+        this.lives = 7;
         this.livesImg = document.getElementById("heart");
         // Parking places the player hast to find. Will be overitten at start.
         this.openParkinglots = 5;
@@ -34,7 +34,7 @@ export default class Game {
     }
     // Start is called and the level is build.
     start() {
-        this.lives = 3;
+        this.lives = 7;
         this.gameObjects = [];
         buildlevel(this, level1, parkinglots1, npCars1, pigeons1, trees1);
         this.timer.reset();
